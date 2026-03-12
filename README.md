@@ -1,10 +1,10 @@
 # Dr. Ragab Biology Academy
 
-Website for **Dr. Mohamed Ragab**, Egypt's premier IGCSE and A-Level Biology educator. Built with Next.js and deployed to GitHub Pages.
+Website for **Dr. Mohamed Ragab**, Egypt's premier IGCSE and A-Level Biology educator. Built with Next.js and deployed on Railway.
 
 ## Tech Stack
 
-- **Next.js 16** (App Router, static export)
+- **Next.js 16** (App Router)
 - **React 19**
 - **Tailwind CSS 4**
 - **Framer Motion** – animations
@@ -27,19 +27,12 @@ Open [http://localhost:3000](http://localhost:3000) to view the site.
 
 ```bash
 npm run build
+npm run start
 ```
-
-Produces a static export in the `out/` folder.
 
 ## Deployment
 
-The site deploys to **GitHub Pages** via GitHub Actions on every push to `main`.
-
-1. In the repo: **Settings → Pages**
-2. Set **Source** to **GitHub Actions**
-3. Push to `main` to trigger a deploy
-
-See [DEPLOY.md](./DEPLOY.md) for custom domain setup and more details.
+Deploy to **Railway** by connecting the GitHub repo. See [DEPLOY.md](./DEPLOY.md) for setup.
 
 ## Project Structure
 

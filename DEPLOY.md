@@ -1,34 +1,16 @@
-# GitHub Pages Deployment
+# Railway Deployment
 
-## Setup
+## Deploy
 
-1. **Enable GitHub Pages**  
-   Go to **Settings → Pages** in your repo and under **Build and deployment**:
-   - **Source:** Deploy from a branch
-   - **Branch:** `gh-pages` / `(root)`
+1. Go to [railway.app](https://railway.app) and sign in with GitHub.
+2. **New Project** → **Deploy from GitHub repo** → select `drragabacademy`.
+3. Railway auto-detects Next.js and runs `npm run build` + `npm run start`.
+4. Add a **domain** in the service settings (e.g. `drragabacademy.up.railway.app` or a custom domain).
 
-2. **Deploy**  
-   Push to `main` — the workflow builds and pushes to `gh-pages` automatically. Or run manually: **Actions → Deploy to GitHub Pages → Run workflow**.
+## Environment
 
-   The first run creates the `gh-pages` branch; the site will be live within a minute.
+Railway sets `PORT` automatically. No extra config needed.
 
-## URLs
+## Custom domain
 
-- **Project site:** `https://<username>.github.io/<repo-name>/`
-- **Custom domain:** Configure in Settings → Pages after DNS is set up.
-
-## Custom domain or user site
-
-If using a custom domain (e.g. drragabacademy.com) or a user/org site (`username.github.io`), set `BASE_PATH` to an empty string in `.github/workflows/deploy.yml`:
-
-```yaml
-env:
-  BASE_PATH: ""
-```
-
-## Manual deploy
-
-```bash
-npm run build
-# Output is in the out/ folder
-```
+In the Railway dashboard: **Settings → Networking → Custom Domain** → add your domain and configure DNS as shown.
