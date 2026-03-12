@@ -2,14 +2,14 @@
 
 ## Setup
 
-1. **Create the repository** on GitHub and push your code.
+1. **Enable GitHub Pages**  
+   Go to **Settings → Pages** in your repo and under **Build and deployment**:
+   - **Source:** Select **GitHub Actions** (not "Deploy from a branch")
+   
+   If "Deploy from a branch" is selected, GitHub serves the repo root (README) instead of the built site.
 
-2. **Enable GitHub Pages**  
-   Go to **Settings → Pages** and set:
-   - **Source:** GitHub Actions
-
-3. **Deploy**  
-   Push to `main` — the workflow builds and deploys automatically.
+2. **Deploy**  
+   Push to `main` — the workflow builds and deploys automatically. Or run the workflow manually: **Actions → Deploy to GitHub Pages → Run workflow**.
 
 ## URLs
 

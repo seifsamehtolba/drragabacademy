@@ -37,6 +37,9 @@ jobs:
           # Set to "" for user/org sites (username.github.io) or custom domain
           BASE_PATH: /${{ github.event.repository.name }}
 
+      - name: Add .nojekyll
+        run: touch out/.nojekyll
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
