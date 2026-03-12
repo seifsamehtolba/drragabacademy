@@ -4,12 +4,13 @@
 
 1. **Enable GitHub Pages**  
    Go to **Settings → Pages** in your repo and under **Build and deployment**:
-   - **Source:** Select **GitHub Actions** (not "Deploy from a branch")
-   
-   If "Deploy from a branch" is selected, GitHub serves the repo root (README) instead of the built site.
+   - **Source:** Deploy from a branch
+   - **Branch:** `gh-pages` / `(root)`
 
 2. **Deploy**  
-   Push to `main` — the workflow builds and deploys automatically. Or run the workflow manually: **Actions → Deploy to GitHub Pages → Run workflow**.
+   Push to `main` — the workflow builds and pushes to `gh-pages` automatically. Or run manually: **Actions → Deploy to GitHub Pages → Run workflow**.
+
+   The first run creates the `gh-pages` branch; the site will be live within a minute.
 
 ## URLs
 
