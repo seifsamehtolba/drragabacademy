@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dr. Ragab Biology Academy
+
+Website for **Dr. Mohamed Ragab**, Egypt's premier IGCSE and A-Level Biology educator. Built with Next.js and deployed to GitHub Pages.
+
+## Tech Stack
+
+- **Next.js 16** (App Router, static export)
+- **React 19**
+- **Tailwind CSS 4**
+- **Framer Motion** – animations
+- **Lucide React** – icons
+- **Plus Jakarta Sans** – typography
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+Produces a static export in the `out/` folder.
 
-To learn more about Next.js, take a look at the following resources:
+## Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The site deploys to **GitHub Pages** via GitHub Actions on every push to `main`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. In the repo: **Settings → Pages**
+2. Set **Source** to **GitHub Actions**
+3. Push to `main` to trigger a deploy
 
-## Deploy on Vercel
+See [DEPLOY.md](./DEPLOY.md) for custom domain setup and more details.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Project Structure
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+src/
+├── app/           # Next.js App Router (layout, page, styles)
+├── components/    # React components
+│   ├── ui/        # Reusable UI components
+│   └── ...        # Section components (Hero, About, etc.)
+public/
+├── images/       # Static assets
+└── favicon/      # Favicons
+```
+
+## License
+
+Private – Dr. Ragab Biology Academy.
